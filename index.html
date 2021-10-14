@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <title>Receipe of the day</title>
+    <style>
+      body {
+        background-image: url("https://i.pinimg.com/736x/e1/f8/d0/e1f8d0b9ee89b387e0f3d4a10ebb7868.jpg");
+        background-repeat: repeat;
+        background-color: #cccccc;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+      }
+      input {
+        border: none;
+        width: 20%;
+        margin: 10px;
+        font-size: 1.5em;
+      }
+      input[type="submit"] {
+        height: 30px;
+        width: 10%;
+      }
+      label {
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <img src="https://i.imgur.com/VfrOd8F.png" />
+    </div>
+    <h1>Recipe of the day</h1>
+    <h2>Hey Good Looking..what's cooking..</h2>
+    <form method="POST" action="/search">
+      <div>
+        <label for="product">Enter the main ingredient that you want to cook with: </label><br />
+        <input type="text" id="product" name="product" value="" />
+      </div>
+      <input type="submit" />
+    </form>
+  </body>
+</html>

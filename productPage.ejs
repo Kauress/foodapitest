@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+  <title>Receipe of the day</title>
+    <style>
+      body{
+    background-image: url("https://i.pinimg.com/736x/e1/f8/d0/e1f8d0b9ee89b387e0f3d4a10ebb7868.jpg");
+    background-repeat:  repeat;
+    background-color: #cccccc;
+    text-align: center;
+      font-family: 'Roboto', sans-serif;;
+      }
+    
+
+      </style>
+  </head>
+
+
+
+<body>
+  <div>
+    <h1>Name</h1>
+    <h3><%= product.name %></h3>
+  </div>
+  <hr>
+  <div>
+    <h1>Image</h1><img src='<%= product.image %>' />
+  </div>
+  <hr>
+  <div>
+    <h1>Link</h1>
+    <h3><%= product.link %></h3>
+  </div>
+  <hr>
+  <div>
+    <h1>Content</h1>
+    <p><%= product.content %></p>
+  </div>
+</body>
+
+</html>
